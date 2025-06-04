@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Redirection en cours...</title>
-    <script>
-      const links = [
-        "https://www.improvingpsych.org/SIPS2025/,
-        "https://jtadrips-2025.sciencesconf.org/resource/page/id/10"
-      ];
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirection en cours...</title>
+</head>
+<body>
+  <p>Redirection en cours...</p>
+  <script>
+    const links = [
+      "https://qualtrics1.qualtrics.com",
+      "https://qualtrics2.qualtrics.com"
+    ];
+    // Redirection après un délai très court pour laisser le contenu s'afficher
+    setTimeout(() => {
       window.location.href = links[Math.floor(Math.random() * links.length)];
-    </script>
-  </head>
-  <body>
-    Redirection en cours...
-  </body>
+    }, 100);
+  </script>
+</body>
 </html>
