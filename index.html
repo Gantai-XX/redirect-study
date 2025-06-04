@@ -11,9 +11,8 @@
       "https://jtadrips-2025.sciencesconf.org/resource/page/id/10",
       "https://www.improvingpsych.org/SIPS2025/"
     ];
-    setTimeout(() => {
-      window.location.href = links[Math.floor(Math.random() * links.length)];
-    }, 100);
+    const randomIndex = Math.floor(Math.random() * links.length);
+    window.location.replace(links[randomIndex]);
   </script>
 </body>
 </html>
