@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Redirection en cours...</title>
+    <meta charset="UTF-8">
+    <title>Study Redirect</title>
+    <script>
+        // Define your two Qualtrics links
+        const links = [
+            "https://laboratoireclle.qualtrics.com/jfe/form/SV_bl5i2PBUcOlTNqu",
+            "https://laboratoireclle.qualtrics.com/jfe/form/SV_cD5WEIyrYNESCrQ"
+        ];
+        
+        // Select a random link index (0 or 1)
+        const randomIndex = Math.floor(Math.random() * links.length);
+        
+        // Execute the redirect
+        window.location.replace(links[randomIndex]);
+    </script>
 </head>
 <body>
-  <p>Redirection en cours...</p>
-  <script>
-    const links = [
-      "https://laboratoireclle.qualtrics.com/jfe/form/SV_bl5i2PBUcOlTNqu",
-      "https://laboratoireclle.qualtrics.com/jfe/form/SV_cD5WEIyrYNESCrQ"
-    ];
-    const randomIndex = Math.floor(Math.random() * links.length);
-    window.location.replace(links[randomIndex]);
-  </script>
+    <p>Redirecting you to the study...</p>
 </body>
 </html>
